@@ -38,13 +38,31 @@ const SnapLenses = () => {
               className="overflow-hidden hover:shadow-lg transition-all hover:translate-y-[-5px] cursor-pointer bg-gradient-to-br from-gray-50 to-gray-100 border-2"
               onClick={() => handleLensClick(lens)}
             >
-              <div className="relative h-64 bg-black flex items-center justify-center">
-                <div className="absolute inset-0 flex items-center justify-center">
+              <div className="relative h-64 overflow-hidden">
+                <div className="absolute inset-0">
                   <img 
-                    src={lens.imageUrl} 
+                    src={lens.shoeImageUrl} 
                     alt={lens.name}
-                    className="max-h-full max-w-full object-contain"
+                    className="w-full h-full object-cover"
                   />
+                  <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+                </div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="relative w-4/5 h-4/5 flex items-center justify-center">
+                    <img 
+                      src={lens.snapBgUrl} 
+                      alt="Snap Lens Background"
+                      className="max-h-full max-w-full object-contain"
+                    />
+                    <div className="absolute pointer-events-none flex items-center justify-center">
+                      <div className="text-white text-center">
+                        <div className="text-xs mb-2 font-semibold text-[#FFFC00]">OPEN IN</div>
+                        <svg className="w-12 h-12 mx-auto" viewBox="0 0 24 24" fill="#FFFC00">
+                          <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86C3.55 17.04 3.6 17.25 3.57 17.45L3.17 19.94C3.06 20.56 3.53 21.02 4.1 20.91L6.56 20.4C6.77 20.36 6.97 20.41 7.14 20.51C8.5 21.29 10.14 21.69 11.81 21.69C14.6 21.69 17.21 20.61 19.09 18.73C20.97 16.85 22.05 14.24 22.05 11.46C22.04 6.45 17.96 2 12.04 2Z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div className="absolute top-2 right-2 bg-[#FFFC00] rounded-full p-1">
                   <svg viewBox="0 0 24 24" className="w-6 h-6 text-white" fill="currentColor">
