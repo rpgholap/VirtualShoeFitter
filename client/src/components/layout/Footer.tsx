@@ -85,7 +85,7 @@ const Footer = () => {
               </div>
             </form>
             <p className="text-gray-500 text-xs mt-2">
-              By subscribing, you agree to our Privacy Policy and Terms of Service.
+              Join our community to get the latest updates and special offers.
             </p>
           </div>
         </div>
@@ -95,14 +95,14 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} ShoeFit AR. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link href="/privacy" className="text-gray-400 hover:text-white text-sm">
-              Privacy Policy
+            <Link href="/about" className="text-gray-400 hover:text-white text-sm">
+              About Us
             </Link>
-            <Link href="/terms" className="text-gray-400 hover:text-white text-sm">
-              Terms of Service
+            <Link href="/catalog" className="text-gray-400 hover:text-white text-sm">
+              Shop
             </Link>
-            <Link href="/cookies" className="text-gray-400 hover:text-white text-sm">
-              Cookies
+            <Link href="/try-on" className="text-gray-400 hover:text-white text-sm">
+              Try-on
             </Link>
           </div>
         </div>
