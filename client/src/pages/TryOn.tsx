@@ -50,7 +50,7 @@ const TryOn = () => {
             </TabsTrigger>
             <TabsTrigger value="snap" className="flex items-center justify-center">
               <Phone className="mr-2 h-4 w-4" />
-              Snap AR Lenses
+              Mobile AR Try-On
             </TabsTrigger>
           </TabsList>
           
