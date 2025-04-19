@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "wouter";
 import TryOnExperience from "@/components/try-on/TryOnExperience";
-import SnapLenses from "@/components/try-on/SnapLenses";
+import MobileAR from "@/components/try-on/MobileAR";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Phone, Camera } from "lucide-react";
 
@@ -59,7 +59,7 @@ const TryOn = () => {
           </TabsContent>
           
           <TabsContent value="snap">
-            <SnapLenses />
+            <MobileAR />
           </TabsContent>
         </Tabs>
       </div>
