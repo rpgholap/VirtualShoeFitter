@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Camera, Search } from "lucide-react";
+import { Camera, Search, Smartphone } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -13,9 +13,9 @@ const HeroSection = () => {
               <span className="text-yellow-300">Virtual Shoe Fitting</span>
             </h1>
             <p className="text-xl text-white/80 mb-8">
-              Experience shoes virtually with AI-powered precision. No more guessing your size or fit.
+              Experience shoes virtually with AI-powered precision. Try on with your webcam or Snapchat AR lenses!
             </p>
-            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-6">
               <Button asChild className="bg-white text-primary hover:bg-gray-100 shadow-lg">
                 <Link href="/try-on">
                   <Camera className="mr-2 h-5 w-5" /> Try On Now
@@ -26,6 +26,20 @@ const HeroSection = () => {
                   <Search className="mr-2 h-5 w-5" /> Browse Catalog
                 </Link>
               </Button>
+            </div>
+            
+            <div className="mt-4 flex items-center">
+              <Link href="/try-on?tab=snap" className="flex items-center group">
+                <div className="flex items-center justify-center bg-[#FFFC00] rounded-full w-10 h-10 shadow-md group-hover:scale-110 transition-transform">
+                  <svg viewBox="0 0 24 24" className="w-6 h-6 text-white" fill="currentColor">
+                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86C3.55 17.04 3.6 17.25 3.57 17.45L3.17 19.94C3.06 20.56 3.53 21.02 4.1 20.91L6.56 20.4C6.77 20.36 6.97 20.41 7.14 20.51C8.5 21.29 10.14 21.69 11.81 21.69C14.6 21.69 17.21 20.61 19.09 18.73C20.97 16.85 22.05 14.24 22.05 11.46C22.04 6.45 17.96 2 12.04 2Z" />
+                  </svg>
+                </div>
+                <span className="ml-2 text-white font-medium group-hover:underline">
+                  Try with Snapchat Lenses
+                </span>
+                <Smartphone className="ml-2 h-4 w-4 text-white opacity-75" />
+              </Link>
             </div>
           </div>
           <div className="hidden md:block relative">
