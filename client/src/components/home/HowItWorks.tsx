@@ -6,7 +6,7 @@ const HowItWorks = () => {
       id: 1,
       title: "Scan Your Feet",
       description: "Use your camera to scan your feet. Our AI technology maps your feet's exact dimensions.",
-      image: "https://images.unsplash.com/photo-1631979208824-ad0d8ee23e91?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      image: "https://staticfanpage.akamaized.net/wp-content/uploads/sites/34/2022/06/amazon-ar-scarpe-1-1200x675.jpg"
     },
     {
       id: 2,

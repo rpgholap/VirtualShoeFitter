@@ -52,11 +52,11 @@ const TechSection = () => {
           </div>
           
           <div className="relative">
-            <img 
+            {/* <img 
               src="https://images.unsplash.com/photo-1626574476256-8f9c7998a5da?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
               alt="AR Technology Visualization" 
               className="rounded-lg shadow-xl" 
-            />
+            /> */}
             
             {/* Overlay Elements to illustrate technology */}
             <div className="absolute inset-0 flex items-center justify-center">
@@ -64,7 +64,7 @@ const TechSection = () => {
             </div>
             
             {/* Technology Indicators */}
-            <div className="absolute top-1/4 left-1/4 bg-white rounded-full shadow-lg p-2 animate-pulse">
+            {/* <div className="absolute top-1/4 left-1/4 bg-white rounded-full shadow-lg p-2 animate-pulse">
               <span className="text-xs font-medium text-primary">Landmark Detection</span>
             </div>
             
@@ -74,7 +74,7 @@ const TechSection = () => {
             
             <div className="absolute bottom-1/4 left-1/3 bg-white rounded-full shadow-lg p-2 animate-pulse">
               <span className="text-xs font-medium text-primary">Size Calculation</span>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
